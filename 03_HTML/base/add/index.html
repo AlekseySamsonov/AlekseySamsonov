@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Горизонтальное меню</h2>
+     
+    <style>
+        .breadcrumbs {
+         margin: 0; padding: 0; /* Убираем отступы */
+        }
+        .breadcrumbs li {
+         display: inline-block; /* Выстраиваем по горизонтали */
+        }
+        .breadcrumbs li::before {
+         content: '|'; /* Разделитель */
+         margin-left: 5px; /* Отступ слева */
+         margin-right: 5px; /* Отступ справа */
+         color: #7f7f7f; /* Цвет разделителя */
+        }
+        .breadcrumbs li:first-child::before {
+         content: ''; /* Убираем разделитель для первого пункта */
+        }
+       </style>
+
+<ul class="breadcrumbs">
+    <li><a href="main.html">Главная</a></li>
+    <li><a href="Catalog.html">Каталог</a></li>
+    <li><a href="promo.html">Акции</a></li>
+    <li><a href="about_us.html">О нас</a></li>
+</ul>
+
+<hr>
+
+<h2>Меню список</h2>
+
+<ul>
+    <li><a href="main.html">Главная</a></li>
+    <li><a href="Catalog.html">Каталог</a></li>
+    <li><a href="promo.html">Акции</a></li>
+    <li><a href="about_us.html">О нас</a></li>
+</ul>
+
+<hr>
+
+<h2>Меню с вложенным списком</h2>
+
+<ul>
+    <a href="main.html"><li>Главная
+        <ul>
+           <a href="News/news.html"><li>Новости</li></a>
+        </ul>
+    </li></a>
+</ul>
+<ul>
+   <a href="Catalog.html"><li>Каталог
+         <ul>
+           <a href="Catalog/a_w.html"><li>Осень-Зима</li></a>
+           <a href="Catalog/s_s.html"><li>Весна-Лето</li></a>
+        </ul>
+   </li></a>
+</ul>
+<ul>
+    <a href="promo.html"><li>Акции
+          <ul>
+            <a href="Promo/last.html"><li>Актуальные</li></a>
+            <a href="Promo/old.html"><li>Прошедшие</li></a>
+         </ul>
+    </li></a>
+ </ul>
+ <ul>
+    <a href="about_us.html"><li>О Нас
+          <ul>
+            <a href="About/contacts.html"><li>Контакты</li></a>
+            <a href="About/sсheme.html"><li>Проезд</li></a>
+         </ul>
+    </li></a>
+ </ul>
+
+ <hr>
+
+ <h2>Меню таблица с вложенными таблицами</h2>
+
+ <style>
+    .td {
+       padding: 0px;
+       padding-left: 20px;
+     }
+</style>
+
+ <table>
+    <tr><th><a href="main.html">Главная</a></th></tr>
+
+        <table class="td">
+         <tr><th><a href="news/news.html">Новости</a></th></tr> 
+        </table>
+        
+  </table>
+
+  <table>
+    <tr><th><a href="Catalog.html">Каталог</a></th></tr>
+
+        <table class="td">
+         <tr><th><a href="Catalog/a_w.html">Осень-Зима</a></th></tr>
+         <tr><th><a href="Catalog/s_s.html">Весна-Лето</a></th></tr>  
+        </table>
+        
+  </table>
+
+  <table>
+    <tr><th><a href="promo.html">Акции</a></th></tr>
+
+        <table class="td">
+         <tr><th><a href="Promo/last.html">Актуальные</a></th></tr>
+         <tr><th><a href="Promo/old.html">Прошедшие</a></th></tr>  
+        </table>
+        
+  </table>
+
+  <table>
+    <tr><th><a href="about_us.html">О нас</a></th></tr>
+
+        <table>
+         <tr><th><a href="About/contacts.html">Контакты</a></th></tr>
+         <tr><th><a href="About/sсheme.html">Проезд</a></th></tr>  
+        </table>
+        
+  </table>
+</body>
+</html>
