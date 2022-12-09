@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    table{
+        width: 700px;
+    }
+</style>
+
+
+</head>
+<body>
+
+<table>
+    <tr>
+        <td>
+            <form action="http://fe.it-academy.by/TestForm.php" method="post">
+
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <input type="text" name="name" maxlength="10">
+                    <input type="submit" value="Искать"> <br>
+                    <input type="radio" name="checkbox" value="na_saite"> на сайте
+                    <input type="radio" name="checkbox2" value="in_Google"> в Google                  
+                </fieldset>       
+            </form>
+        </td>
+
+        <td>
+            <form action="http://fe.it-academy.by/TestForm.php" method="post">
+
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <label for="pole"></label>
+                    <input type="text" name="name" id="pole" required placeholder>*
+                    <input type="submit" value="Искать"> <br>
+                    <input type="radio" name="checkbox" value="na_saite"> на сайте
+                    <input type="radio" name="checkbox2" value="in_Google"> в Google                  
+                </fieldset>       
+            </form>
+        </td>
+        <td>
+            <form action="http://fe.it-academy.by/TestForm.php" method="post">
+
+                <fieldset>
+                    <legend>Авторизуйтесь</legend>
+                    <input type="text" name="login" id="log" required placeholder>Логин*
+                    <input type="text" name="password" id="pass" required placeholder>Пароль*
+                    <input type="checkbox" name="checkbox2" value="stay_in_system"> Оставаться в системе <br>
+                    <input type="submit" value="Войти">                  
+                </fieldset>       
+            </form>
+        </td>
+    </tr>
+    
+</table>
+
+</body>
+</html>
